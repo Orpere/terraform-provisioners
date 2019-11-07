@@ -33,7 +33,7 @@ The inspiration for this repository come from the Hashicorp [documentation](http
 
 [Provisioners can be used to model specific actions on the local machine or on a remote machine in order to prepare servers or other infrastructure objects for service.](https://www.terraform.io/docs/provisioners/index.html)
 
-Terraform is a tool to deploy, manage and update infrastructure but there are some software specific to some tasks or some workflows already have some dependencies for that terraform can make use of providers which are already built in as you can see below.
+Terraform is a tool to deploy, manage and update infrastructure but there are some software specific to some tasks or some workflows already have some dependencies for that terraform can make use of provisioners which are already built in as you can see below.
 
 As example Terraform has Built-in Provisioners:
 
