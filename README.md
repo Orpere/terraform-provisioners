@@ -3,7 +3,7 @@
 This repo has as target to define and show what I have learned about terraform provisioners
 
 how can I use this repository?
-You can use this repo as reference or you can clone the repository to your computer using the follow commands 
+You can use this repo as reference or you can clone the repository to your computer using the follow commands
 
 ```git
 git clone git@github.com:Orpere/terraform-provisioners.git
@@ -25,7 +25,7 @@ and use the commands add, commit and push to your own changes
 
 for more instructions to use git you can check the [link](https://rogerdudler.github.io/git-guide/) it will have a much better explanation about all git steps
 
-# Terraform provisioners
+## Terraform provisioners
 
 The inspiration for this repository come from the Hashicorp [documentation](https://www.terraform.io/docs/provisioners/index.html)
 
@@ -44,7 +44,6 @@ As example Terraform has Built-in Provisioners:
   5) [puppet Provisioner](https://www.terraform.io/docs/provisioners/puppet.html)
   6) [remote-exec Provisioner](https://www.terraform.io/docs/provisioners/remote-exec.html)
   7) [salt-masterless Provisioner](https://www.terraform.io/docs/provisioners/salt-masterless.html)
-
 
 example: module_web
 
