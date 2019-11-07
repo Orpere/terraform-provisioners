@@ -33,7 +33,9 @@ The inspiration for this repository come from the Hashicorp [documentation](http
 
 [Provisioners can be used to model specific actions on the local machine or on a remote machine in order to prepare servers or other infrastructure objects for service.](https://www.terraform.io/docs/provisioners/index.html)
 
-NOTE: on my opinion is the way terraform uses to interact with external software or create connections to the infrastructure. as example Terraform has Built-in Provisioners:
+Terraform is a tool to deploy, manage and update infrastructure but there are some software specific to some tasks or some workflows already have some dependencies for that terraform can make use of providers which are already built in as you can see below.
+
+As example Terraform has Built-in Provisioners:
 
   1) [chef Provisioner](https://www.terraform.io/docs/provisioners/chef.html)
   2) [file Provisioner](https://www.terraform.io/docs/provisioners/file.html)
@@ -42,6 +44,7 @@ NOTE: on my opinion is the way terraform uses to interact with external software
   5) [puppet Provisioner](https://www.terraform.io/docs/provisioners/puppet.html)
   6) [remote-exec Provisioner](https://www.terraform.io/docs/provisioners/remote-exec.html)
   7) [salt-masterless Provisioner](https://www.terraform.io/docs/provisioners/salt-masterless.html)
+
 
 example: module_web
 
