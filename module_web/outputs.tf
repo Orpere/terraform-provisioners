@@ -1,3 +1,3 @@
-output "public_ip" {
+output "id" {
   value = "${null_resource.web}"
 }

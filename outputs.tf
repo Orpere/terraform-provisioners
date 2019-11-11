@@ -1,3 +1,3 @@
-output "public_ip" {
-  value = "${module.module_web}"
+output "id" {
+  value = "${module.module_web.id}"
 }

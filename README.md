@@ -11,7 +11,51 @@ git clone git@github.com:Orpere/terraform-provisioners.git
 
 for more instructions to use git you can check the [link](https://rogerdudler.github.io/git-guide/) it will have a much better explanation about all git steps
 
-After clone the repo you can install terraform downloading the adequate version to your OS on [Terraform](https://www.terraform.io/downloads.html).
+After clone the repo you can install terraform downloading the adequate version to your OS on [Terraform](https://www.terraform.io/downloads.html) and on your shell:
+
+```bash
+cd terraform-provisioners
+terraform init #retrieves your modules and dependencies
+terraform plan #plans the AWS infrastructure
+terraform apply #creates the AWS infrastructure
+```
+
+The terraform apply command should return a plan as the follow:
+
+```terraform
+An execution plan has been generated and is shown below.
+Resource actions are indicated with the following symbols:
+  + create
+
+Terraform will perform the following actions:
+
+  # module.module_web.null_resource.web[0] will be created
+  + resource "null_resource" "web" {
+      + id = (known after apply)
+    }
+
+  # module.module_web.null_resource.web[1] will be created
+  + resource "null_resource" "web" {
+      + id = (known after apply)
+    }
+
+Plan: 2 to add, 0 to change, 0 to destroy.
+
+Do you want to perform these actions?
+  Terraform will perform the actions described above.
+  Only 'yes' will be accepted to approve.
+
+  Enter a value:
+```
+IF you add yes it should return something as:
+
+```terraform 
+module.module_web.null_resource.web[0]: Creating...
+module.module_web.null_resource.web[1]: Creating...
+module.module_web.null_resource.web[1]: Creation complete after 0s [id=621951717159216442]
+module.module_web.null_resource.web[0]: Creation complete after 0s [id=1687665112458622642]
+```
+install terraform downloading the adequate version to your OS on [Terraform](https://www.terraform.io/downloads.html).
 
 Terraform most used commands are:
 
