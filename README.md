@@ -45,16 +45,34 @@ Do you want to perform these actions?
   Terraform will perform the actions described above.
   Only 'yes' will be accepted to approve.
 
-  Enter a value:
+  Enter a value: 
 ```
 IF you add yes it should return something as:
 
 ```terraform 
+
 module.module_web.null_resource.web[0]: Creating...
 module.module_web.null_resource.web[1]: Creating...
-module.module_web.null_resource.web[1]: Creation complete after 0s [id=621951717159216442]
-module.module_web.null_resource.web[0]: Creation complete after 0s [id=1687665112458622642]
+module.module_web.null_resource.web[1]: Creation complete after 0s [id=1267061546862194160]
+module.module_web.null_resource.web[0]: Creation complete after 0s [id=4744003330515041964]
+
+Apply complete! Resources: 2 added, 0 changed, 0 destroyed.
+
+Outputs:
+
+id = [
+  {
+    "id" = "4744003330515041964"
+  },
+  {
+    "id" = "1267061546862194160"
+  },
+]
 ```
+
+terraform destroy will clean all infrastructure
+
+
 install terraform downloading the adequate version to your OS on [Terraform](https://www.terraform.io/downloads.html).
 
 Terraform most used commands are:
