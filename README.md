@@ -9,21 +9,16 @@ You can use this repo as reference or you can clone the repository to your compu
 git clone git@github.com:Orpere/terraform-provisioners.git
 ```
 
-you can also fork this repo using the fork button on top right on github and use it as yours as the follow example:
-
-![fork](fork.png)
-
-like this you can clone and edit the repository and commit your own changes.
-
-you can clone your own repo as:
-
-```git
-git clone git@github.com:<YourGitUser>/terraform-provisioners.git
-```
-
-and use the commands add, commit and push to your own changes
-
 for more instructions to use git you can check the [link](https://rogerdudler.github.io/git-guide/) it will have a much better explanation about all git steps
+
+After clone the repo you can install terraform downloading the adequate version to your OS on [Terraform](https://www.terraform.io/downloads.html).
+
+Terraform most used commands are:
+
+- terraform fmt - cleans up your code formatting
+- terraform init - retrieves your modules and dependencies
+- terraform plan - plans the AWS infrastructure
+- terraform apply - creates the AWS infrastructure
 
 ## Terraform provisioners
 
